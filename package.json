@@ -1,0 +1,24 @@
+{
+  "name": "express-console",
+  "version": "1.0.0",
+  "description": "Grunt server with express that prints to the console",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "express": "^4.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pgarciacamou/express-console.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgarciacamou/express-console/issues"
+  },
+  "homepage": "https://github.com/pgarciacamou/express-console"
+}
