@@ -12,15 +12,15 @@ app.use(bodyParser.json());
 
 app.post('/array', function(req, res){
   if(!req.body) res.sendStatus(400);
-  req.body.data.forEach(function(d){
+  req.body.data[0].forEach(function(d){
     console.log(d);
   });
   res.sendStatus(200);
 });
 
-app.post('/object', function(req, res){
+app.post('/string', function(req, res){
   if(!req.body) res.sendStatus(400);
-  console.log(req.body);
+  console.log.apply(console, req.body.data);
   res.sendStatus(200);
 });
 
