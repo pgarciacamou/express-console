@@ -10,7 +10,7 @@ app.use(function(req, res, next) {
 
 app.use(bodyParser.json());
 
-app.post('/', function(req, res){
+app.post('/array', function(req, res){
   if(!req.body) res.sendStatus(400);
   req.body.data.forEach(function(d){
     console.log(d);
