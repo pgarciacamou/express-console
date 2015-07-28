@@ -19,3 +19,16 @@ You can see an example code [here](https://gist.github.com/pgarciacamou/82e49e1d
   httpRequest.setRequestHeader("Content-Type", "application/json");
   httpRequest.send(JSON.stringify(json));
 ```
+
+## Using a demo console
+You can add this script to your demos **before the scripts you might want to use this in**
+```HTML
+<script type="text/javascript" src="//raw.githubusercontent.com/pgarciacamou/express-console/master/console.js"></script>
+<script type="text/javascript">
+  // @example
+  var consArr = new Console({
+    localhost: "10.0.1.8",
+    route: "array"
+  });
+</script>
+```
